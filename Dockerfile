@@ -46,6 +46,9 @@ RUN mkdir -p /var/lib/nomad && \
     mkdir -p /etc/nomad && \
     chown -R nomad:nomad /var/lib/nomad /etc/nomad
 
+# Install Docker
+RUN apk add --no-cache docker
+
 # Expose the nomad data directory as a volume since there's mutable state in there.
 VOLUME /var/lib/nomad
 
