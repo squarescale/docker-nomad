@@ -2,7 +2,7 @@ FROM alpine:3.7
 MAINTAINER Squarescale Engineering <engineering@squarescale.com>
 
 # This is the release of Consul to pull in.
-ENV NOMAD_VERSION=0.8.3
+ENV NOMAD_VERSION=0.8.4
 
 # This is the location of the releases.
 ENV HASHICORP_RELEASES=https://releases.hashicorp.com
